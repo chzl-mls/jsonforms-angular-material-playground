@@ -33,7 +33,6 @@
                       "type": "VerticalLayout",
                       "elements": [
                         {
-
                           "type": "Control",
                           "scope": "#/properties/assignee"
                         },
@@ -77,7 +76,6 @@
                             }
                           }
                         }
-
                       ]
                     }
                   ]

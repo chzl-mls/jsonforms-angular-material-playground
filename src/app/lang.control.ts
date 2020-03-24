@@ -1,11 +1,11 @@
-import {NgRedux} from '@angular-redux/store';
-import {Component} from '@angular/core';
-import {JsonFormsControl} from '@jsonforms/angular';
-import {getLocale, JsonFormsState, setLocale} from '@jsonforms/core';
+import { NgRedux } from '@angular-redux/store';
+import { Component } from '@angular/core';
+import { JsonFormsControl } from '@jsonforms/angular';
+import { getLocale, JsonFormsState, setLocale } from '@jsonforms/core';
 
 @Component({
   selector: 'app-lang-component',
-  template:  `
+  template: `
     <p>Click button to set locale</p>
     <p>Current locale: {{currentLocale}}</p>
     <button mat-raised-button color="primary" (click)="changeLocale('de-DE')">de-DE</button>

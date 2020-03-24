@@ -1,9 +1,9 @@
-import {combineReducers, Reducer} from 'redux';
-import {and, jsonformsReducer, JsonFormsState, rankWith, schemaTypeIs, scopeEndsWith, Tester, isControl, optionIs, } from '@jsonforms/core';
+import { combineReducers, Reducer } from 'redux';
+import { and, jsonformsReducer, JsonFormsState, rankWith, schemaTypeIs, scopeEndsWith, Tester, isControl, optionIs, } from '@jsonforms/core';
 
-import {angularMaterialRenderers} from '@jsonforms/angular-material';
-import {CustomAutocompleteControlRenderer} from './custom.autocomplete';
-import {LangComponent} from './lang.control';
+import { angularMaterialRenderers } from '@jsonforms/angular-material';
+import { CustomAutocompleteControlRenderer } from './custom.autocomplete';
+import { LangComponent } from './lang.control';
 import { DataDisplayComponent } from './data.control';
 
 export const rootReducer: Reducer<JsonFormsState> = combineReducers({ jsonforms: jsonformsReducer() });

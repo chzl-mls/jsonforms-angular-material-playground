@@ -1,11 +1,11 @@
-import {NgRedux} from '@angular-redux/store';
-import {Component} from '@angular/core';
-import {JsonFormsControl} from '@jsonforms/angular';
-import {ControlProps, JsonFormsState} from '@jsonforms/core';
+import { NgRedux } from '@angular-redux/store';
+import { Component } from '@angular/core';
+import { JsonFormsControl } from '@jsonforms/angular';
+import { ControlProps, JsonFormsState } from '@jsonforms/core';
 
 @Component({
   selector: 'app-data-component',
-  template:  '<pre>{{dataAsString}}</pre>'
+  template: '<pre>{{dataAsString}}</pre>'
 })
 export class DataDisplayComponent extends JsonFormsControl {
 

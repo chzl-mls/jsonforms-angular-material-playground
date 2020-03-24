@@ -6,10 +6,19 @@
         "customer": {
           "type": "object",
           "properties": {
-            "id": { "type": "string" },
-            "name": { "type": "string"},
-            "department": { "type": "string" },
-            "emailAddress": { "type": "string", "format": "email" }
+            "id": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "department": {
+              "type": "string"
+            },
+            "emailAddress": {
+              "type": "string",
+              "format": "email"
+            }
           }
         },
         "title": {
@@ -19,12 +28,16 @@
         "description": {
           "type": "string"
         },
-        "ordered": { "type": "boolean" },
+        "ordered": {
+          "type": "boolean"
+        },
         "processId": {
           "type": "number",
           "minimum": 0
         },
-        "assignee": { "type": "string" },
+        "assignee": {
+          "type": "string"
+        },
         "startDate": {
           "type": "string",
           "format": "date"
@@ -35,7 +48,11 @@
         },
         "status": {
           "type": "string",
-          "enum": ["unordered", "planned", "ordered"]
+          "enum": [
+            "unordered",
+            "planned",
+            "ordered"
+          ]
         },
         "amount": {
           "type": "integer",
@@ -56,5 +73,7 @@
       }
     }
   },
-  "required": ["title"]
+  "required": [
+    "title"
+  ]
 }

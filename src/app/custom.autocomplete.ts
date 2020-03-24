@@ -1,11 +1,11 @@
 import * as randomWords from 'random-words';
-import {debounceTime, finalize, tap} from 'rxjs/operators';
-import {switchMap} from 'rxjs/operators';
-import {delay} from 'rxjs/operators';
-import {of} from 'rxjs';
-import {AutocompleteControlRenderer} from '@jsonforms/angular-material';
-import {Observable} from 'rxjs';
-import {Component} from '@angular/core';
+import { debounceTime, finalize, tap } from 'rxjs/operators';
+import { switchMap } from 'rxjs/operators';
+import { delay } from 'rxjs/operators';
+import { of } from 'rxjs';
+import { AutocompleteControlRenderer } from '@jsonforms/angular-material';
+import { Observable } from 'rxjs';
+import { Component } from '@angular/core';
 
 const words: string[] = randomWords(1000);
 

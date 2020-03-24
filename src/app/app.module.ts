@@ -2,9 +2,9 @@ import JsonRefs from 'json-refs';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 
-import {isDevMode, NgModule} from '@angular/core';
-import {DevToolsExtension, NgRedux} from '@angular-redux/store';
-import {Actions, JsonFormsState, setLocale, UISchemaElement} from '@jsonforms/core';
+import { isDevMode, NgModule } from '@angular/core';
+import { DevToolsExtension, NgRedux } from '@angular-redux/store';
+import { Actions, JsonFormsState, setLocale, UISchemaElement } from '@jsonforms/core';
 import { JsonFormsAngularMaterialModule } from '@jsonforms/angular-material';
 import AJV from 'ajv';
 import { parsePhoneNumber } from 'libphonenumber-js';
@@ -14,8 +14,8 @@ import { initialState, rootReducer } from './store';
 import data from './data';
 
 import { AppComponent } from './app.component';
-import {CustomAutocompleteControlRenderer} from './custom.autocomplete';
-import {MatAutocompleteModule, MatProgressSpinnerModule} from '@angular/material';
+import { CustomAutocompleteControlRenderer } from './custom.autocomplete';
+import { MatAutocompleteModule, MatProgressSpinnerModule } from '@angular/material';
 import { LangComponent } from './lang.control';
 import { DataDisplayComponent } from './data.control';
 import { JsonFormsModule } from '@jsonforms/angular';
@@ -54,7 +54,7 @@ export class AppModule {
 
     // You probably only want to expose this tool in devMode.
     if (isDevMode() && devTools.isEnabled()) {
-      enhancers = [ ...enhancers, devTools.enhancer() ];
+      enhancers = [...enhancers, devTools.enhancer()];
     }
 
     ngRedux.configureStore(

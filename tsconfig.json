@@ -17,7 +17,9 @@
     "esModuleInterop": true,
     "baseUrl": "./",
     "paths": {
-      "json-schema-ref-parser": ["node_modules/json-schema-ref-parser/dist/ref-parser.js"]
+      "json-schema-ref-parser": [
+        "node_modules/json-schema-ref-parser/dist/ref-parser.js"
+      ]
     }
   }
 }
